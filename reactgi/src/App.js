@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Person from './Basicinfo';
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -13,13 +14,14 @@ class App extends React.Component {
 
   render() {
     return (
-
+      
       <div className="App">
-        <Person name={this.state.person[0].name} age={this.state.person[0].age} dob={this.state.person[0].dob} />
-        <Person name={this.state.person[1].name} age={this.state.person[1].age} dob={this.state.person[1].dob} />
-        <Person name={this.state.person[2].name} age={this.state.person[2].age} dob={this.state.person[2].dob} />
 
-        <div>
+        <h1>Basic Information</h1>
+        <div className='Cards'>
+          <Person name={this.state.person[0].name} age={this.state.person[0].age} dob={this.state.person[0].dob} />
+          <Person name={this.state.person[1].name} age={this.state.person[1].age} dob={this.state.person[1].dob} />
+          <Person name={this.state.person[2].name} age={this.state.person[2].age} dob={this.state.person[2].dob} />
         </div>
       </div>
 
